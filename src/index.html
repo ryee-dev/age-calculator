@@ -9,11 +9,23 @@
 
       <form id="age-form">
         <div class="form-group">
-          <label for="age-input">Enter your Age (in years): </label>
-          <input type="number" id="age-input" name="user-age" class="form-control" placeholder="e.g. 24">
+          <label for="ageInput">Enter your Age (in years): </label>
+          <input type="number" id="ageInput" name="ageInput" class="form-control" placeholder="e.g. 24">
+          <br>
+          <select class="form-control" id="planet-select" name="planets">
+            <option value="nil">-select-</option>
+            <option value="Earth">Earth</option>
+            <option value="Mercury">Mercury</option>
+          </select>
         </div>
         <button type="submit" class="btn btn-success">Calcumalate</button>
       </form>
+
+      <hr>
+
+      <div class="show-result">
+        <h4><span id="earthAge"></span> Earth Years</h4>
+      </div>
 
     </div>
   </body>

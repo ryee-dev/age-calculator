@@ -1,10 +1,8 @@
 import { AgeCalculator } from './../src/age-calculator.js'
 
-describe('Age', function() {
+describe('AgeCalculator', function() {
   it('returns the inputted years', function() {
-    var newAge = new AgeCalculator();
-    var sampleAge = 24;
-    newAge.getsAge(sampleAge)
-    expect(newAge.getsAge(sampleAge)).toEqual(24);
+    var newAge = new AgeCalculator(24);
+    expect(newAge.getsAge()).toEqual(24);
   });
 });
