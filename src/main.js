@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 $(document).ready(function() {
   $("#age-form").submit(function(event) {
     event.preventDefault();
-    let age = parseInt($("#ageInput").val());
+
+    let birthdate = parseInt($("#birthdate").val());
     let planet = $("#planet-select").val();
     let time = $("#time-select").val();
 
@@ -15,7 +16,7 @@ $(document).ready(function() {
 
     $("#earthCosmicAge").text(result);
     $("#time-label").text(cosmicAge.time);
-    $("#cosmic-age").show(cosmicAge.age);
+    $("#cosmic-age").text(cosmicAge.age);
     $(".show-result").show();
 
   });

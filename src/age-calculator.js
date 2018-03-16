@@ -23,19 +23,19 @@ export class AgeCalculator {
       return "Please select a planet.";
     }
 
-    if ( this.time === 'years' ) {
+    if ( this.time === 'Years' ) {
       answer = this.age * 1;
-    } else if ( this.time === 'months' ) {
+    } else if ( this.time === 'Months' ) {
       answer = this.age * 12;
-    } else if ( this.time === 'weeks' ) {
+    } else if ( this.time === 'Weeks' ) {
       answer = this.age * 52;
-    } else if ( this.time === 'days' ) {
+    } else if ( this.time === 'Days' ) {
       answer = this.age * 365;
-    } else if ( this.time === 'hours' ) {
+    } else if ( this.time === 'Hours' ) {
       answer = this.age * 8760;
-    } else if ( this.time === 'minutes' ) {
+    } else if ( this.time === 'Minutes' ) {
       answer = this.age * 525600;
-    } else if ( this.time === 'seconds' ) {
+    } else if ( this.time === 'Seconds' ) {
       answer = this.age * 31536000;
     }
       return answer * ratio;
