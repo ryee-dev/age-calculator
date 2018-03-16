@@ -11,22 +11,105 @@
         <div class="form-group">
           <label for="ageInput">Enter your Age (in years): </label>
           <input type="number" id="ageInput" name="ageInput" class="form-control" placeholder="e.g. 24">
-          <br>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+          <label for="planet-select">Select a Planet: </label>
           <select class="form-control" id="planet-select" name="planets">
             <option value="nil">-select-</option>
-            <option value="Earth">Earth</option>
-            <option value="Mercury">Mercury</option>
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth">Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
           </select>
         </div>
+
+        <br>
+
+        <div class="form-group">
+          <label for="time-select">Enter time duration: </label>
+          <select class="form-control" id="time-select" name="time">
+            <option value="nil">-select-</option>
+            <option value="seconds">Seconds</option>
+            <option value="minutes">Minutes</option>
+            <option value="hours">Hours</option>
+            <option value="days">Days</option>
+            <option value="weeks">Weeks</option>
+            <option value="months">Months</option>
+            <option value="years">Years</option>
+          </select>
+        </div>
+
         <button type="submit" class="btn btn-success">Calcumalate</button>
       </form>
 
       <hr>
 
       <div class="show-result">
-        <h4><span id="earthAge"></span> Earth Years</h4>
+        <h4>
+          <div id="cosmic-age">
+            <span id="earthCosmicAge"></span> <span id="time-label"></span>&nbsp;old
+          </div>
+        </h4>
       </div>
-
     </div>
   </body>
 </html>
+          <!-- <div id="venus-age">
+            <span id="venus-secs"></span>
+            <span id="venus-mins"></span>
+            <span id="venus-hours"></span>
+            <span id="venus-days"></span>
+            <span id="venus-weeks"></span>
+            <span id="venus-months"></span>
+            <span id="venus-years"></span>
+          </div>
+          <div id="venus-age">
+            <span id="venus-secs"></span>
+            <span id="venus-mins"></span>
+            <span id="venus-hours"></span>
+            <span id="venus-days"></span>
+            <span id="venus-weeks"></span>
+            <span id="venus-months"></span>
+            <span id="venus-years"></span>
+          </div> -->
+
+          <!-- <div id="mars-age">
+            <span id="mars-secs"></span>
+            <span id="mars-mins"></span>
+            <span id="mars-hours"></span>
+            <span id="mars-days"></span>
+            <span id="mars-weeks"></span>
+            <span id="mars-months"></span>
+            <span id="mars-years"></span>
+          </div>
+          <div id="jupiter-age">
+            <span id="jupiter-secs"></span>
+            <span id="jupiter-mins"></span>
+            <span id="jupiter-hours"></span>
+            <span id="jupiter-days"></span>
+            <span id="jupiter-weeks"></span>
+            <span id="jupiter-months"></span>
+            <span id="jupiter-years"></span>
+          </div>
+          <div id="saturn-age">
+            <span id="saturn-secs"></span>
+            <span id="saturn-mins"></span>
+            <span id="saturn-hours"></span>
+            <span id="saturn-days"></span>
+            <span id="saturn-weeks"></span>
+            <span id="saturn-months"></span>
+            <span id="saturn-years"></span>
+          </div>
+          <div id="uranus-age">
+            <span id="uranus-secs"></span>
+            <span id="uranus-mins"></span>
+            <span id="uranus-hours"></span>
+            <span id="uranus-days"></span>
+            <span id="uranus-weeks"></span>
+            <span id="uranus-months"></span>
+            <span id="uranus-years"></span>
+          </div> -->

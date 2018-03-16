@@ -1,17 +1,22 @@
 import './styles.css';
+import { AgeCalculator } from './age-calculator.js';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { AgeCalculator } from './age-calculator.js';
 
 $(document).ready(function() {
-
-  $("#age-form").submit(function(event){
+  $("#age-form").submit(function(event) {
     event.preventDefault();
-    var ageInput = parseInt($("#ageInput").val());
-    var userAge = new AgeCalculator(ageInput);
-    var earthAge = userAge.getsAge(ageInput);
+    let age = parseInt($("#ageInput").val());
+    let planet = $("#planet-select").val();
+    let time = $("#time-select").val();
 
-    $("#earthAge").text(earthAge);
+    let cosmicAge = new AgeCalculator(age, planet, time);
+    let result = cosmicAge.getsAge();
+
+    $("#earthCosmicAge").text(result);
+    $("#time-label").text(cosmicAge.time);
+    $("#cosmic-age").show(cosmicAge.age);
     $(".show-result").show();
+
   });
 });
