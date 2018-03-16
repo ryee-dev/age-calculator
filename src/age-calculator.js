@@ -1,16 +1,17 @@
-export function AgeCalculator(ageInput) {
-  this.age = ageInput;
-}
-
-AgeCalculator.prototype.getsAge = function() {
-  let mercYears;
-  let venusYears;
-  let earthYears;
-  let marsYears;
-  let jupiterYears;
-
-  if ( this.age === this.age ) {
-    earthYears = this.age * 1;
-    return earthYears;
+export class AgeCalculator {
+  constructor(ageInput) {
+    this.age = ageInput;
   }
-};
+
+  getsAge() {
+    let mercYears = 0;
+    let venusYears = 0;
+    let earthYears = 0;
+    let marsYears = 0;
+    let jupiterYears = 0;
+    if ( this.age === this.age ) {
+      earthYears = this.age * 1;
+      return earthYears;
+    }
+  }
+}
