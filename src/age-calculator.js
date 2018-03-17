@@ -84,8 +84,13 @@ export class AgeCalculator {
       answer = this.age * 31536000;
       remaining = earthExpectancy * 31536000;
     }
+
     let earthTimeLeft = remaining - answer;
-    let timeLeft = earthTimeLeft * ratio;
-    return timeLeft.toFixed(2);
+    let product = earthTimeLeft * ratio;
+
+    if ( product < 0 ) {
+      product *= -1;
+    }
+    return product.toFixed(2);
   }
 }

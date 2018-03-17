@@ -13,13 +13,20 @@ $(document).ready(function() {
     let cosmicAge = new AgeCalculator(age, planet, time);
     let result = cosmicAge.getsAge();
     let countdown = cosmicAge.timeLeft();
-    let postLabel = cosmicAge.planet + " " + cosmicAge.time;
 
     $("#cosmic-age").text(result);
-    $("#time-left").text(countdown);
+    $(".time-left").text(countdown);
     $(".planet-label").text(cosmicAge.planet);
     $(".time-label").text(cosmicAge.time);
     $(".show-results").show();
+
+    if ( age <= 79 ) {
+      $("#exceeding-time").hide();
+      $("#remaining-time").show();
+    } else {
+      $("#remaining-time").hide();
+      $("#exceeding-time").show();
+    }
 
   });
 });

@@ -21,4 +21,8 @@ describe('AgeCalculator', function() {
     expect(newAge.timeLeft()).toEqual('230.64');
   });
 
+  it('returns the exceeding average life expectancy in selected time frame', function() {
+    let newAge = new AgeCalculator(100, 'Earth', 'Years');
+    expect(newAge.timeLeft()).toEqual('21.00');
+  });
 });
