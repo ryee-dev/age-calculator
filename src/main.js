@@ -13,10 +13,10 @@ $(document).ready(function() {
     let cosmicAge = new AgeCalculator(age, planet, time);
     let result = cosmicAge.getsAge();
 
-    $("#earthCosmicAge").text(result);
+    $("#cosmic-age").text(result);
+    $("#planet-label").text(cosmicAge.planet)
     $("#time-label").text(cosmicAge.time);
-    $("#cosmic-age").show(cosmicAge.age);
-    $(".show-result").show();
+    $(".show-results").show();
 
   });
 });

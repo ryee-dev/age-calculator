@@ -2,6 +2,6 @@ h1 {
   text-align: center;
 }
 
-.show-result, #merc-age, #venus-age, #earth-age, #mars-age, #jupiter-age, #saturn-age {
+.show-results {
   display: none;
 }
