@@ -11,9 +11,14 @@ describe('AgeCalculator', function() {
     expect(newAge.getsAge()).toEqual(157680000);
   });
 
-  it('returns remaining years to live', function() {
+  it('returns proportional age on planet', function() {
     let newAge = new AgeCalculator(24, 'mars', 'years');
     expect(newAge.getsAge()).toEqual(45.12);
+  });
+
+  it('returns remaining time on planet', function() {
+    let newAge = new AgeCalculator(48, 'venus', 'months');
+    expect(newAge.timeLeft()).toEqual(19.22);
   });
 
 });
