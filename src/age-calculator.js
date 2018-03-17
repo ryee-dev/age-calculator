@@ -38,6 +38,7 @@ export class AgeCalculator {
     } else if ( this.time === 'Seconds' ) {
       answer = this.age * 31536000;
     }
-      return answer * ratio;
+      let product = answer * ratio;
+      return product.toFixed(2); 
   }
 }
