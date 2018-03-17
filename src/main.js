@@ -13,11 +13,12 @@ $(document).ready(function() {
     let cosmicAge = new AgeCalculator(age, planet, time);
     let result = cosmicAge.getsAge();
     let countdown = cosmicAge.timeLeft();
+    let postLabel = cosmicAge.planet + " " + cosmicAge.time;
 
     $("#cosmic-age").text(result);
     $("#time-left").text(countdown);
-    $("#planet-label").text(cosmicAge.planet)
-    $("#time-label").text(cosmicAge.time);
+    $(".planet-label").text(cosmicAge.planet);
+    $(".time-label").text(cosmicAge.time);
     $(".show-results").show();
 
   });
