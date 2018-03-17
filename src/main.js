@@ -4,6 +4,19 @@ import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
+
+  $("#begin-butt").click(function(event) {
+    event.preventDefault();
+    $("#start-screen").fadeOut("fast");
+    $("#enter-info").fadeIn("slow");
+  });
+
+  $("#back-butt").click(function(event) {
+    event.preventDefault();
+    $("#start-screen").fadeIn("slow");
+    $("#enter-info").fadeOut("fast");
+  });
+
   $("#age-form").submit(function(event) {
     event.preventDefault();
     let age = parseInt($("#ageInput").val());

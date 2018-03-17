@@ -1,7 +1,59 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Headers : START */
 h1 {
   text-align: center;
 }
 
-.show-results, #remaining-time, #exceeding-time {
+#custom-header {
+  font-size: 28px;
+}
+
+p.lead {
+  text-align: center;
+}
+
+/* Headers : END */
+
+#enter-info, #remaining-time, #exceeding-time {
   display: none;
 }
+
+#start-screen {
+  display: block;
+  margin: 15% auto 15% auto;
+}
+
+.show-results {
+  display: none;
+  text-align: center;
+}
+
+#age-form {
+  display: block;
+  margin: 0 auto;
+}
+
+well#age-header {
+
+}
+
+well#time-left-header {
+
+}
+
+well#time-extra-header {
+
+}
+
+/* Buttons : START */
+
+#begin-butt {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Buttons : END */
