@@ -43,8 +43,10 @@ export class AgeCalculator {
   }
 
   timeLeft() {
-    const earthExpectancy = 79;
+    let earthExpectancy = 79;
+    let answer;
     let ratio;
+    let remaining;
 
     if ( this.planet === 'Earth' ) {
       ratio = 1;
@@ -82,7 +84,8 @@ export class AgeCalculator {
       answer = this.age * 31536000;
       remaining = earthExpectancy * 31536000;
     }
-    let timeLeft = remaining - answer;
+    let earthTimeLeft = remaining - answer;
+    let timeLeft = earthTimeLeft * ratio;
     return timeLeft.toFixed(2);
   }
 }
