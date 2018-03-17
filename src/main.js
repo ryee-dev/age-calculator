@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $("#earthCosmicAge").text(result);
     $("#time-label").text(cosmicAge.time);
-    $("#cosmic-age").text(cosmicAge.age);
+    $("#cosmic-age").show(cosmicAge.age);
     $(".show-result").show();
 
   });
