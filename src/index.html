@@ -4,18 +4,21 @@
     <title>Age Calculator</title>
   </head>
   <body>
+    <div class="video-background">
+      <div class="video-foreground">
+        <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
     <div class='container'>
       <br>
 
       <div class="jumbotron" id="start-screen">
         <h1 class="display-3">Cosmic Age Calculator</h1>
+        <br>
         <p class="lead">A simple webapp that calculates your <strong>age</strong> & <strong>remaining time</strong> across the solar system.</p>
         <br>
-        <p class="lead">Why, you ask?</p>
-        <br>
-        <p class="lead">Because Franz said so.</p>
         <hr class="my-2">
-        <br><br>
         <button type="button" class="btn btn-default btn-lg" id="begin-butt">Begin</button>
       </div>
         <div class="row">
@@ -59,45 +62,44 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="show-results">
-            <hr>
-            <h4>
-              <div class="well" id="age-header">
-                <span id="custom-header"><u>Your Current Age:</u></span>
-                <br><br>
-                <span id="cosmic-age"></span>&nbsp;
-                <span class="planet-label"></span>&nbsp;
-                <span class="time-label"></span>
-              </div>
+        <div class="show-results">
+          <br><hr><br>
+          <h4>
+            <div class="well" id="age-header">
+              <span id="custom-header"><u>Your Current Age:</u></span>
+              <br><br>
+              <span id="cosmic-age"></span>&nbsp;
+              <span class="planet-label"></span>&nbsp;
+              <span class="time-label"></span>
+            </div>
 
-            <br><br><hr><br>
+          <br><hr><br>
 
-              <div class="well" id="time-left-header">
-                <div id="remaining-time">
-                  <span id="custom-header"><u><span class="time-label"></span>&nbsp;Left:</u></span>
-                  <br><br>
-                  <span class="time-left"></span>&nbsp;
-                  <span class="planet-label"></span>&nbsp;
-                  <span class="time-label"></span>&nbsp;
-                </div>
-              </div>
-
-              <div class="well" id="time-extra-header">
-                <div id="exceeding-time">
-                  <span id="custom-header"><u><span class="time-label"></span>&nbsp;Over Life Expectancy: </u></span><br><br>
-                  <span class="time-left"></span>&nbsp;
-                  <span class="planet-label"></span>&nbsp;
-                  <span class="time-label"></span>&nbsp;
-                </div>
-              </div>
-
-            </h4>
-            <button type="button" class="btn btn-default btn-lg" id="back-butt">Back</button>
+          <div class="well" id="time-left-header">
+            <div id="remaining-time">
+              <span id="custom-header"><u><span class="time-label"></span>&nbsp;Left:</u></span>
+              <br><br>
+              <span class="time-left"></span>&nbsp;
+              <span class="planet-label"></span>&nbsp;
+              <span class="time-label"></span>&nbsp;
+            </div>
           </div>
-        </div>
 
+          <div class="well" id="time-extra-header">
+            <div id="exceeding-time">
+              <span id="custom-header"><u><span class="time-label"></span>&nbsp;Over Life Expectancy: </u></span><br><br>
+              <span class="time-left"></span>&nbsp;
+              <span class="planet-label"></span>&nbsp;
+              <span class="time-label"></span>&nbsp;
+            </div>
+          </div>
+
+          <br><hr>
+
+        </h4>
+        <button type="button" class="btn btn-warning btn-lg" id="back-butt">Back</button>
       </div>
+
     </div>
   </body>
 </html>

@@ -15,6 +15,7 @@ $(document).ready(function() {
     event.preventDefault();
     $("#start-screen").fadeIn("slow");
     $("#enter-info").fadeOut("fast");
+    $(".show-results").fadeOut("fast");
   });
 
   $("#age-form").submit(function(event) {
