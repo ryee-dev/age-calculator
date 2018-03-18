@@ -28,18 +28,22 @@ $(document).ready(function() {
     let result = cosmicAge.getsAge();
     let countdown = cosmicAge.timeLeft();
 
+
+
     $("#cosmic-age").text(result);
     $(".time-left").text(countdown);
     $(".planet-label").text(cosmicAge.planet);
     $(".time-label").text(cosmicAge.time);
-    $(".show-results").show();
+
+    $("#enter-info").fadeOut("fast");
+    $(".show-results").fadeIn("slow");
 
     if ( age <= 79 ) {
       $("#exceeding-time").hide();
-      $("#remaining-time").show();
+      $("#remaining-time").fadeIn("slow");
     } else {
       $("#remaining-time").hide();
-      $("#exceeding-time").show();
+      $("#exceeding-time").fadeIn("slow");
     }
 
   });

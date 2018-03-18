@@ -15,6 +15,7 @@ h1 {
 
 #custom-header {
   font-size: 28px;
+  color: white;
 }
 
 p.lead {
@@ -22,9 +23,19 @@ p.lead {
   color: white;
 }
 
+label {
+  color: white;
+}
+
 /* Headers : END */
 
-#enter-info, #remaining-time, #exceeding-time {
+#enter-info {
+  display: none;
+  margin: 25% 20% 25% 20%;
+  width: 100%;
+}
+
+#remaining-time, #exceeding-time {
   display: none;
 }
 
@@ -36,11 +47,17 @@ p.lead {
 .show-results {
   display: none;
   text-align: center;
+  margin: 20% 20% 20% 20%;
 }
 
 #age-form {
   display: block;
   margin: 0 auto;
+  width: 100%;
+}
+
+#cosmic-age, #remaining-time, #exceeding-time, .planet-label, .time-label {
+  color: white;
 }
 
 well#age-header {
@@ -57,7 +74,7 @@ well#time-extra-header {
 
 /* Buttons : START */
 
-#begin-butt {
+#begin-butt, #calculate-butt {
   display: block;
   margin: 0 auto;
 }
