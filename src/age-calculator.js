@@ -41,7 +41,7 @@ export class AgeCalculator {
     } else {
       return "Please select a time frame."
     }
-      let product = current * ratio;
+      let product = current / ratio;
       return product.toFixed(2);
   }
 
@@ -104,8 +104,8 @@ export class AgeCalculator {
       return "Please select a time frame."
     }
 
-    let earthTimeLeft = remaining - current;
-    let product = earthTimeLeft * ratio;
+    let lifeDiff = remaining - current;
+    let lifeDiff / ratio;
 
     if ( product < 0 ) {
       product *= -1;
