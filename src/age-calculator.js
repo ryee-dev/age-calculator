@@ -105,11 +105,11 @@ export class AgeCalculator {
     }
 
     let lifeDiff = remaining - current;
-    let lifeDiff / ratio;
+    let timeLeft = lifeDiff / ratio;
 
-    if ( product < 0 ) {
-      product *= -1;
+    if ( timeLeft < 0 ) {
+      timeLeft *= -1;
     }
-    return product.toFixed(2);
+    return timeLeft.toFixed(2);
   }
 }
