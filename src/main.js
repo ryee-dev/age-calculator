@@ -23,8 +23,8 @@ $(document).ready(function() {
     let age = parseInt($("#ageInput").val());
     let planet = $("#planet-select").val();
     let time = $("#time-select").val();
-
-    let cosmicAge = new AgeCalculator(age, planet, time);
+    let race = $("#race-select").val();
+    let cosmicAge = new AgeCalculator(age, planet, time, race);
     let result = cosmicAge.getsAge();
     let countdown = cosmicAge.timeLeft();
 
