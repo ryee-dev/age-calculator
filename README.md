@@ -1,8 +1,47 @@
-- [ ] Take a person’s age in years and convert it into seconds.
-- [ ] Take two dates and determine the difference, in seconds, between the two. (This way a user can enter a birthdate and the application can compare the birthdate against the current time to come up with an accurate age.)
-- [ ] Return the age of a human in Mercury years. (A Mercury year is .24 Earth years.)
-- [ ] Return the age of a human in Venus years. (A Venus year is .62 Earth years.)
-- [ ] Return the age of a human in Mars years. (A Mars year is 1.88 Earth years.)
-- [ ] Return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years.)
-- [ ] Determine how many years a user has left to live on each planet… (yikes!) To do this, the application will have to calculate the user’s life expectancy. You can determine average life expectancy as you see fit. A simple way to do this would be to have the user input the average life expectancy for their demographic. A more involved way to do this would be to collect other information from the user (e.g. lifestyle, country of residence, activity level, etc.) to determine their life expectancy.
-- [ ] If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy.
+# Cosmic Age Calculator
+
+#### Javascript Code Review: Functional age converter utilizing webpack dependencies, tested with Jasmine with Karma properly set up.
+
+#### By Roger Yee
+
+## Description
+
+This simple web app allows the user to discover their age and the time they have left on whichever planet is selected. By simply inputting their current age, their ethnic race, their desired planet, and a specific timeframe, the web app will calculate their proportional age and time left using simple algorithms based on real-world relevant and reliable statistics.
+
+## Setup/Installation Requirements
+
+1. Clone Repository
+```
+$ git clone https://github.com/ryee926/age-calculator
+```
+2. Install Dependencies
+```
+$ npm install
+```
+3. Build & Run Application
+```
+$ npm run build
+```
+```
+$ npm run start
+```
+4. Visit Webpage
+- Visit 'http://localhost:8080/' in web browser
+
+## Known Bugs
+- None so far.
+
+## Support and contact details
+If you run into any problems, or if you have any questions, email me at: ryee926@gmail.com
+
+## Technologies Used
+
+HTML, CSS, Bootstrap, Javascript, Jquery, NPM, Webpack: Jasmine, Karma, ES6, etc.
+
+visit https://github.com/ryee926/npm-webpacker to see the full list of dependencies installed & used.
+
+### License
+
+Copyright (c) 2018 Roger Yee
+
+MIT
